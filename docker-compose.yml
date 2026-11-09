@@ -1,0 +1,8 @@
+services:
+  weather:
+    build: .
+    image: weather-tracker
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data:/data
